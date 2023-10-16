@@ -30,18 +30,17 @@ export default function Reveal({
         position: "relative",
         width,
         overflow: "hidden",
-        borderRadius: "10px",
         border: "none",
       }}
     >
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: 75 },
+          hidden: { opacity: 0, y: 150 },
           visible: { opacity: 1, y: 0 },
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.5, delay: 0.25 }}
+        transition={{ duration: 0.9, delay: 0.25 }}
       >
         {children}
       </motion.div>

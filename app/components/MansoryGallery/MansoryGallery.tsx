@@ -21,7 +21,7 @@ export default function MansoryGallery() {
   );
 
   return (
-    <div className="columns-2 md:columns-3 lg:columns-4 p-24 bg-[#c7ac8f]">
+    <div className="columns-2 md:columns-3 lg:columns-4 md:p-24 p-10 bg-[#c7ac8f]">
       {sortedImageArray.map((image) => (
         <Reveal width="100%" key={image.src.toString()}>
           <div className="relative mb-4 before:content-[''] before:rounded-md before:absolute before:inset-0 before:bg-black before:bg-opacity-20">
