@@ -8,7 +8,13 @@ import Image3 from "../../assets/Home/Amor_que_vira_memória_(3).svg";
 export default function IntroCarousel() {
   return (
     <div className="w-[98.89999vw]">
-      <Carousel dotPosition="bottom" autoplay draggable effect="fade">
+      <Carousel
+        dotPosition="bottom"
+        autoplay
+        draggable
+        effect="fade"
+        autoplaySpeed={2000}
+      >
         <Image
           src={Image1}
           alt="CarrouselImage"

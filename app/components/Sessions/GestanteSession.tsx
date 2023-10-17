@@ -9,7 +9,7 @@ export default function GestanteSession() {
   const navigate = useRouter();
   return (
     <div
-      className="w-full flex flex-col space-y-5 items-center justify-start py-5 bg-zinc-200 p-10"
+      className="w-full flex flex-col space-y-5 items-center justify-start py-5 bg-gradient-to-b from-zinc-200 to-[#BB987D] p-10"
       id="gestante"
     >
       <span className="flex flex-col space-y-2 items-center justify-center py-10">

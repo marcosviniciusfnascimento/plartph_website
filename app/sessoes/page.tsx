@@ -41,13 +41,13 @@ export default function SessoesPage() {
   }, [selectedSession]);
 
   return (
-    <div className="flex w-full items-center justify-start py-9 flex-col space-y-5 bg-zinc-100">
+    <div className="pt-32 flex w-full items-center justify-start py-9 flex-col space-y-5 bg-gradient-to-b from-zinc-200 to-[#BB987D]">
       <motion.h5
         variants={fadeInAnimationVariants}
         initial="initial"
         animate="animate"
         transition={{ duration: 0.8 }}
-        className="mt-10 font-theseasonsit text-3xl font-thin text-zinc-800 md:text-md text-center w-full"
+        className="mt-10 font-theseasonsit text-4xl font-thin text-zinc-800 md:text-md text-center w-full"
       >
         Sessões e Acompanhamentos
       </motion.h5>
@@ -63,7 +63,7 @@ export default function SessoesPage() {
         initial="initial"
         animate="animate"
         transition={{ duration: 0.8 }}
-        className="text-zinc-800 lg:max-w-[50%] md:max-w-[75%] font-Geosans text-xl text-center pt-10"
+        className="text-zinc-800 lg:max-w-[50%] md:max-w-[75%] font-Geosans text-2xl text-center pt-10"
       >
         Antes de uma sessão acontecer, todas as expectativas são alinhadas em
         uma reunião. Gosto de fazer assim para que tudo aconteça como você
@@ -76,7 +76,7 @@ export default function SessoesPage() {
         initial="initial"
         animate="animate"
         transition={{ duration: 0.8 }}
-        className="text-zinc-800 lg:max-w-[50%] md:max-w-[75%] font-Geosans text-xl text-center pt-4 pb-10"
+        className="text-zinc-800 lg:max-w-[50%] md:max-w-[75%] font-Geosans text-2xl text-center pt-4 pb-10"
       >
         Conduzir as sessões com leveza e preservar a singularidade de cada
         instante com sensibilidade e interferindo o menos possível é como eu

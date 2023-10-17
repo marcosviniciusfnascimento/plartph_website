@@ -52,7 +52,7 @@ export default function Navbar() {
     <>
       {isMobile && (
         <NavbarWrapper
-          className="py-3 bg-gradient-to-r from-primary via-red-200/80 to-primary backdrop-blur-3xl h-16"
+          className="py-3 bg-gradient-to-r from-primary via-red-200/80 to-primary h-16"
           onMenuOpenChange={setIsMenuOpen}
           shouldHideOnScroll
         >
@@ -68,10 +68,18 @@ export default function Navbar() {
           </NavbarBrand>
           <NavbarContent justify="end">
             <Link href={"http://instagram.com/plartph"} target="_blank">
-              <Instagram color="rgb(120,53,15)" size={30} />
+              <Instagram className="text-zinc-700 hover:text-white" size={30} />
             </Link>
-            <Link href={"http://instagram.com/plartph"} target="_blank">
-              <BsWhatsapp color="rgb(120,53,15)" size={27} />
+            <Link
+              href={
+                "https://api.whatsapp.com/send/?phone=5555996442675&text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+as+coberturas+fotograficas%21&type=phone_number&app_absent=0"
+              }
+              target="_blank"
+            >
+              <BsWhatsapp
+                className="text-zinc-700 hover:text-white"
+                size={27}
+              />
             </Link>
           </NavbarContent>
           <NavbarMenu className="top-16">
@@ -85,12 +93,7 @@ export default function Navbar() {
       )}
       {!isMobile && (
         <NavbarWrapper
-          className={`
-          py-3 backdrop-blur-3xl ${
-            pathname === "/"
-              ? "fixed top-0 left-0 right-0 bg-white/10"
-              : "bg-gradient-to-r from-primary via-red-200/80 to-primary"
-          }`}
+          className="py-3 fixed top-0 left-0 right-0 bg-transparent backdrop-blur-sm border-b-[1px] border-zinc-100"
           shouldHideOnScroll
         >
           <NavbarBrand>
@@ -103,8 +106,8 @@ export default function Navbar() {
               <Link href={item.path} key={item.path}>
                 <NavbarItem
                   className={`font-Geosans text-xl font-medium ${
-                    pathname === item.path ? "text-amber-900" : "text-white"
-                  } hover:text-amber-900`}
+                    pathname === item.path ? "text-amber-800" : "text-black"
+                  } hover:text-amber-800`}
                 >
                   {item.label}
                 </NavbarItem>
@@ -113,10 +116,18 @@ export default function Navbar() {
           </NavbarContent>
           <NavbarContent justify="end">
             <Link href={"http://instagram.com/plartph"} target="_blank">
-              <Instagram color="rgb(120,53,15)" size={30} />
+              <Instagram className="text-zinc-700 hover:text-white" size={30} />
             </Link>
-            <Link href={"http://instagram.com/plartph"} target="_blank">
-              <BsWhatsapp color="rgb(120,53,15)" size={27} />
+            <Link
+              href={
+                "https://api.whatsapp.com/send/?phone=5555996442675&text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+as+coberturas+fotograficas%21&type=phone_number&app_absent=0"
+              }
+              target="_blank"
+            >
+              <BsWhatsapp
+                className="text-zinc-700 hover:text-white"
+                size={27}
+              />
             </Link>
           </NavbarContent>
         </NavbarWrapper>
