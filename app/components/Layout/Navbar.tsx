@@ -52,13 +52,15 @@ export default function Navbar() {
     <>
       {isMobile && (
         <NavbarWrapper
-          className="py-3 bg-gradient-to-r from-primary via-red-200/80 to-primary h-16"
+          className="py-3 fixed top-0 left-0 right-0 bg-transparent backdrop-blur-sm border-b-[1px] border-zinc-100"
           onMenuOpenChange={setIsMenuOpen}
+          isMenuOpen={isMenuOpen}
           shouldHideOnScroll
         >
           <NavbarContent>
             <NavbarMenuToggle
               aria-label={isMenuOpen ? "Abrir Menu" : "Fechar Menu"}
+              className="text-zinc-800"
             />
           </NavbarContent>
           <NavbarBrand>
@@ -68,7 +70,10 @@ export default function Navbar() {
           </NavbarBrand>
           <NavbarContent justify="end">
             <Link href={"http://instagram.com/plartph"} target="_blank">
-              <Instagram className="text-zinc-700 hover:text-white" size={30} />
+              <Instagram
+                className="text-zinc-700 hover:text-zinc-400"
+                size={30}
+              />
             </Link>
             <Link
               href={
@@ -77,16 +82,21 @@ export default function Navbar() {
               target="_blank"
             >
               <BsWhatsapp
-                className="text-zinc-700 hover:text-white"
+                className="text-zinc-700 hover:text-zinc-400"
                 size={27}
               />
             </Link>
           </NavbarContent>
-          <NavbarMenu className="top-16">
+          <NavbarMenu
+            className="pt-16 bg-[#BB987D] z-20"
+            onClick={() => setIsMenuOpen(false)}
+          >
             {menuItems.map((item) => (
-              <NavbarMenuItem key={item.path} className="text-zinc-700">
-                {item.label}
-              </NavbarMenuItem>
+              <Link href={item.path} key={item.path}>
+                <NavbarMenuItem className="text-zinc-700 font-Geosans text-2xl text-center">
+                  {item.label}
+                </NavbarMenuItem>
+              </Link>
             ))}
           </NavbarMenu>
         </NavbarWrapper>
@@ -116,7 +126,10 @@ export default function Navbar() {
           </NavbarContent>
           <NavbarContent justify="end">
             <Link href={"http://instagram.com/plartph"} target="_blank">
-              <Instagram className="text-zinc-700 hover:text-white" size={30} />
+              <Instagram
+                className="text-zinc-700 hover:text-zinc-400"
+                size={30}
+              />
             </Link>
             <Link
               href={
@@ -125,7 +138,7 @@ export default function Navbar() {
               target="_blank"
             >
               <BsWhatsapp
-                className="text-zinc-700 hover:text-white"
+                className="text-zinc-700 hover:text-zinc-400"
                 size={27}
               />
             </Link>

@@ -52,6 +52,8 @@ export default function SessionCarousel({ gallery }: SessionCarrouselProps) {
         speed={6000}
         waitForAnimate
         slidesToShow={4}
+        pauseOnFocus={false}
+        pauseOnHover={false}
         slidesToScroll={1}
         style={{
           width: "100%",

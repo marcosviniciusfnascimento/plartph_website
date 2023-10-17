@@ -63,7 +63,7 @@ export default function SessoesPage() {
         initial="initial"
         animate="animate"
         transition={{ duration: 0.8 }}
-        className="text-zinc-800 lg:max-w-[50%] md:max-w-[75%] font-Geosans text-2xl text-center pt-10"
+        className="text-zinc-800 lg:max-w-[50%] md:max-w-[75%] font-Geosans text-xl text-center pt-10 max-sm:px-10"
       >
         Antes de uma sessão acontecer, todas as expectativas são alinhadas em
         uma reunião. Gosto de fazer assim para que tudo aconteça como você
@@ -76,7 +76,7 @@ export default function SessoesPage() {
         initial="initial"
         animate="animate"
         transition={{ duration: 0.8 }}
-        className="text-zinc-800 lg:max-w-[50%] md:max-w-[75%] font-Geosans text-2xl text-center pt-4 pb-10"
+        className="text-zinc-800 lg:max-w-[50%] md:max-w-[75%] font-Geosans text-xl text-center pt-4 pb-10 max-sm:px-10"
       >
         Conduzir as sessões com leveza e preservar a singularidade de cada
         instante com sensibilidade e interferindo o menos possível é como eu

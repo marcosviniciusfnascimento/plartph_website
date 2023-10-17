@@ -1,10 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import fabiolaImg from "../../assets/Fabiola.svg";
 import { Button } from "@nextui-org/react";
 import { ArrowRight } from "lucide-react";
 import useScreenSize from "@/app/hooks/useScreenSize";
-import { Variants, animate, motion } from "framer-motion";
-import { useRouter } from "next/navigation";
+import { Variants, motion } from "framer-motion";
+import Link from "next/link";
 
 const fadeInAnimationVariants: Variants = {
   initial: {
@@ -18,7 +20,6 @@ const fadeInAnimationVariants: Variants = {
 };
 
 export default function About() {
-  const navigate = useRouter();
   const isMobile = useScreenSize();
   return (
     <>
@@ -67,8 +68,8 @@ export default function About() {
             <Image
               src={fabiolaImg}
               alt="fabiola"
-              height={488}
-              width={316}
+              height={412}
+              width={266}
               className="z-0"
               priority
             />
@@ -84,28 +85,29 @@ export default function About() {
             style={{ display: "relative" }}
             className="flex items-center justify-center flex-col"
           >
-            <p className="font-Geosans text-zinc-800 text-lg font-semibold w-full px-12 z-10">
+            <p className="font-Geosans text-zinc-800 text-lg font-semibold w-full px-12 z-10 text-center">
               Acredito no poder da conexão que a fotografia traz, no amor
               envolvido, no momento que se torna único a cada clique e sorriso.
               É uma forma valiosa de documentar as relações e os momentos
               especiais entre as pessoas que amamos.
             </p>
-            <p className="font-Geosans text-zinc-800 text-lg font-semibold w-full px-12 z-10">
+            <p className="font-Geosans text-zinc-800 text-lg font-semibold w-full px-12 z-10 text-center">
               Capturar esses momentos entre mãe e filha(o) pode ser ainda mais
               emocionante. As fotos trarão de volta lembranças de momentos
               felizes e ajudarão a manter essas memórias vivas por muitos anos.
             </p>
-            <p className="font-theseasons text-zinc-800 text-lg font-semibold w-full px-12 z-10 mt-2">
+            <p className="font-theseasons text-zinc-800 text-lg font-semibold w-full px-12 z-10 mt-2 text-center">
               Conheça meu trabalho !
             </p>
-            <Button
-              endContent={<ArrowRight size={15} />}
-              className="bg-primary mt-3 rounded-sm"
-              size="sm"
-              onClick={() => navigate.push("/sessoes")}
-            >
-              Clique para saber Mais
-            </Button>
+            <Link href={"/sessoes"}>
+              <Button
+                endContent={<ArrowRight size={15} />}
+                className="bg-primary mt-3 rounded-sm"
+                size="sm"
+              >
+                Clique para saber Mais
+              </Button>
+            </Link>
           </motion.div>
         </div>
       )}
@@ -184,14 +186,15 @@ export default function About() {
             <p className="font-theseasons text-zinc-800 text-lg font-semibold w-96 z-10 mt-2">
               Conheça meu trabalho !
             </p>
-            <Button
-              endContent={<ArrowRight size={15} />}
-              className="bg-primary mt-3 rounded-sm"
-              size="sm"
-              onClick={() => navigate.push("/sessoes")}
-            >
-              Clique para saber Mais
-            </Button>
+            <Link href="/sessoes">
+              <Button
+                endContent={<ArrowRight size={15} />}
+                className="bg-primary mt-3 rounded-sm"
+                size="sm"
+              >
+                Clique para saber Mais
+              </Button>
+            </Link>
           </motion.div>
         </div>
       )}
