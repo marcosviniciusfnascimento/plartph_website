@@ -3,32 +3,57 @@ import fabiolaImg from "../assets/Fabiola.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { BsWhatsapp } from "react-icons/bs";
+import AnimateH5 from "../components/Animate/h5";
+import Reveal from "../components/Reveal/Reveal";
 
 export default function SobrePage() {
   return (
     <div className="w-full flex flex-col items-center justify-center pt-32 bg-gradient-to-b from-[#BB987D] to-zinc-200 pb-20">
-      <Image src={fabiolaImg} alt="fabiola" height={488} width={316} priority />
+      <Reveal width="100%">
+        <div className="w-full flex items-center justify-center">
+          <Image
+            src={fabiolaImg}
+            alt="fabiola"
+            height={380}
+            width={250}
+            priority
+          />
+        </div>
+      </Reveal>
       <span className="pt-5">
-        <h5 className="text-zinc-800 font-theseasonsit text-3xl text-center">
+        <AnimateH5
+          direction="vertical"
+          className="text-zinc-800 font-theseasonsit text-5xl text-center"
+        >
           Um pouco sobre
-        </h5>
-        <h5 className="text-zinc-800 font-theseasonsit text-xl text-center">
+        </AnimateH5>
+        <AnimateH5
+          direction="vertical"
+          className="text-zinc-800 font-theseasonsit text-3xl text-center"
+        >
           Mim e meu trabalho
-        </h5>
+        </AnimateH5>
       </span>
       <span className="text-zinc-800 font-Geosans text-xl pt-10 w-1/2 text-center max-sm:px-10 max-sm:w-full">
-        Durante a sessão procuro fazer fotografias atemporais, de momentos
-        sinceros e conexões verdadeiras. Te prometo muitas risadas, carinho e
-        sentimentos gostosos registrados no seu álbum de família. Trago isso da
-        minha própria experiência e paixão pelas fotografias da minha família,
-        não tem nada melhor do que se reunir e falar sobre como as coisas eram.
+        <AnimateH5 direction="vertical">
+          Durante a sessão procuro fazer fotografias atemporais, de momentos
+          sinceros e conexões verdadeiras. Te prometo muitas risadas, carinho e
+          sentimentos gostosos registrados no seu álbum de família. Trago isso
+          da minha própria experiência e paixão pelas fotografias da minha
+          família, não tem nada melhor do que se reunir e falar sobre como as
+          coisas eram.
+        </AnimateH5>
       </span>
       <span className="text-zinc-800 font-Geosans text-xl pt-10 w-1/2 text-center max-sm:px-10 max-sm:w-full">
-        Eu sou uma entusiasta a registros de momentos, esposa, mãe de duas (por
-        enquanto de quatro patas), geminiana criativa e tagarela.
+        <AnimateH5 direction="vertical">
+          Eu sou uma entusiasta a registros de momentos, esposa, mãe de duas
+          (por enquanto de quatro patas), geminiana criativa e tagarela.
+        </AnimateH5>
       </span>
       <span className="text-zinc-800 font-theseasonsit text-xl pt-10 w-1/2 text-center max-sm:px-10 max-sm:w-full">
-        Te espero para tornar o seu amor, memória.
+        <AnimateH5 direction="vertical">
+          Te espero para tornar o seu amor, memória.
+        </AnimateH5>
       </span>
       <span className="flex space-x-2 pt-5">
         <Link href={"http://instagram.com/plartph"} target="_blank">

@@ -1,6 +1,9 @@
+"use client";
+
 import { Carousel } from "antd";
 import { Variants, motion } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
+import React from "react";
 
 const AnimationVariants: Variants = {
   initial: {
@@ -47,12 +50,12 @@ export default function SessionCarousel({ gallery }: SessionCarrouselProps) {
         dots={false}
         infinite
         draggable
-        autoplay
+        autoplay={true}
         autoplaySpeed={100}
         speed={6000}
-        waitForAnimate
         slidesToShow={4}
         pauseOnFocus={false}
+        waitForAnimate
         pauseOnHover={false}
         slidesToScroll={1}
         style={{

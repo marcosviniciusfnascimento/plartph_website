@@ -5,11 +5,13 @@ import { motion, useInView, useAnimation } from "framer-motion";
 interface RevealProps {
   children: ReactNode;
   width?: "fit-content" | "100%";
+  delay?: number;
 }
 
 export default function Reveal({
   children,
   width = "fit-content",
+  delay = 0.25,
 }: RevealProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -40,7 +42,7 @@ export default function Reveal({
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.9, delay: 0.25 }}
+        transition={{ duration: 0.9, delay: delay }}
       >
         {children}
       </motion.div>

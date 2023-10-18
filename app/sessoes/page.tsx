@@ -41,7 +41,7 @@ export default function SessoesPage() {
   }, [selectedSession]);
 
   return (
-    <div className="pt-32 flex w-full items-center justify-start py-9 flex-col space-y-5 bg-gradient-to-b from-zinc-200 to-[#BB987D]">
+    <div className="pt-32 flex w-full items-center justify-start py-9 flex-col space-y-5 bg-gradient-to-b from-[#d6c1b0] to-zinc-200 ">
       <motion.h5
         variants={fadeInAnimationVariants}
         initial="initial"
@@ -55,14 +55,14 @@ export default function SessoesPage() {
         variants={fadeInAnimationVariants}
         initial="initial"
         animate="animate"
-        transition={{ duration: 0.8 }}
-        className="border-2 border-b-black lg:w-56 md:w-24"
+        transition={{ duration: 0.8, delay: 0.25 }}
+        className="h-[1px] bg-zinc-800 lg:w-56 md:w-24"
       />
       <motion.p
         variants={fadeInAnimationVariants}
         initial="initial"
         animate="animate"
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
         className="text-zinc-800 lg:max-w-[50%] md:max-w-[75%] font-Geosans text-xl text-center pt-10 max-sm:px-10"
       >
         Antes de uma sessão acontecer, todas as expectativas são alinhadas em
@@ -75,7 +75,7 @@ export default function SessoesPage() {
         variants={fadeInAnimationVariants}
         initial="initial"
         animate="animate"
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.8, delay: 0.75 }}
         className="text-zinc-800 lg:max-w-[50%] md:max-w-[75%] font-Geosans text-xl text-center pt-4 pb-10 max-sm:px-10"
       >
         Conduzir as sessões com leveza e preservar a singularidade de cada
@@ -87,7 +87,7 @@ export default function SessoesPage() {
         variants={fadeInAnimationVariants}
         initial="initial"
         animate="animate"
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.8, delay: 1 }}
         className="grid lg:grid-cols-4 gap-3 md:grid-cols-2 pb-10"
       >
         {SessionsConfig.map((session) => (
