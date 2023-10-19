@@ -13,7 +13,6 @@ import Logo from "../../assets/PlartphSvg.svg";
 import { usePathname } from "next/navigation";
 import { Instagram } from "lucide-react";
 import { BsWhatsapp } from "react-icons/bs";
-import dynamic from "next/dynamic";
 import { useState } from "react";
 
 type MenuItemType = {
@@ -91,7 +90,7 @@ export default function Navbar() {
         >
           {menuItems.map((item) => (
             <Link href={item.path} key={item.path}>
-              <NavbarMenuItem className="text-zinc-700 font-Geosans text-2xl text-center">
+              <NavbarMenuItem className="text-white font-Geosans text-2xl text-center">
                 {item.label}
               </NavbarMenuItem>
             </Link>

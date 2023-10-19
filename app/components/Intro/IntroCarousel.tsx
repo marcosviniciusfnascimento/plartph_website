@@ -42,7 +42,7 @@ export default function IntroCarousel() {
           />
         </Carousel>
       </div>
-      <div className="w-full max-sm:pt-20 bg-primary hidden max-sm:block">
+      <div className="w-full hidden max-sm:block">
         <Carousel
           dotPosition="bottom"
           autoplay

@@ -41,7 +41,7 @@ export default function SessoesPage() {
   }, [selectedSession]);
 
   return (
-    <div className="pt-32 flex w-full items-center justify-start py-9 flex-col space-y-5 bg-gradient-to-b from-[#d6c1b0] to-zinc-200 ">
+    <div className="pt-32 flex w-full items-center justify-start py-9 flex-col space-y-5 bg-zinc-200">
       <motion.h5
         variants={fadeInAnimationVariants}
         initial="initial"

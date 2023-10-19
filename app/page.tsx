@@ -6,12 +6,8 @@ import { useEffect } from "react";
 import useScreenSize from "./hooks/useScreenSize";
 
 export default function Home() {
-  const isMobile = useScreenSize();
-  useEffect(() => {}, []);
-
   return (
     <div className="bg-zinc-200">
-      {isMobile && <span>Teste</span>}
       <IntroCarousel />
       <About />
       <MansoryGallery />
