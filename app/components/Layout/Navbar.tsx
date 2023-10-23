@@ -33,6 +33,10 @@ export default function Navbar() {
       label: "Sessões",
     },
     {
+      path: "/natal",
+      label: "Natal",
+    },
+    {
       path: "/presets",
       label: "Presets",
     },
@@ -90,7 +94,7 @@ export default function Navbar() {
         >
           {menuItems.map((item) => (
             <Link href={item.path} key={item.path}>
-              <NavbarMenuItem className="text-white font-Geosans text-2xl text-center">
+              <NavbarMenuItem className="text-white font-Geosans text-2xl text-center ">
                 {item.label}
               </NavbarMenuItem>
             </Link>
@@ -98,7 +102,7 @@ export default function Navbar() {
         </NavbarMenu>
       </NavbarWrapper>
       <NavbarWrapper
-        className="py-3 fixed top-0 left-0 right-0 bg-transparent backdrop-blur-3xl max-sm:hidden"
+        className="py-3 fixed w-full bg-transparent backdrop-blur-3xl max-sm:hidden"
         shouldHideOnScroll
       >
         <NavbarBrand>

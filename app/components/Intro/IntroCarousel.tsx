@@ -4,9 +4,9 @@ import { Carousel } from "antd";
 import Image2 from "../../assets/Home/Amor que vira memória.svg";
 import Image3 from "../../assets/Home/Amor que vira memória (1).svg";
 import Image1 from "../../assets/Home/Amor que vira memória (2).svg";
-import Image1w from "../../assets/Home/Amor_que_vira_memória_w.svg";
-import Image3w from "../../assets/Home/Amor_que_vira_memória_(2)_w.svg";
-import Image2w from "../../assets/Home/Amor_que_vira_memória_(3)_w.svg";
+import Image1w from "../../assets/Home/AmorSv.svg";
+import Image3w from "../../assets/Home/PartoSv.svg";
+import Image2w from "../../assets/Home/NewbSv.svg";
 
 export default function IntroCarousel() {
   return (

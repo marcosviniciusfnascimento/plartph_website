@@ -11,7 +11,7 @@ import AnimateSpan from "../components/Animate/span";
 export default function DuvidasPage() {
   return (
     <div className="w-full flex flex-col justify-center items-center bg-zinc-200">
-      <div className="pt-40 flex flex-col items-center justify-center bg-gradient-to-b from-[#BB987D] to-zinc-200 w-full">
+      <div className="pt-40 flex flex-col items-center justify-center bg-zinc-200 w-full">
         <AnimateH5
           direction="vertical"
           className="font-theseasonsit text-zinc-800 text-4xl text-center"

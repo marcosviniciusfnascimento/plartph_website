@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import Reveal from "../Reveal/Reveal";
 import AnimateSpan from "../Animate/span";
 import AnimateH5 from "../Animate/h5";
+import Link from "next/link";
 
 export default function GestanteSession() {
   const gestantesGallery = Object.values(gestantesImages);
@@ -46,18 +47,15 @@ export default function GestanteSession() {
           com o novo membro da família.
         </AnimateSpan>
         <div className="flex items-center justify-center w-full pt-6 pb-10">
-          <Button
-            endContent={<Heart size={20} />}
-            className="bg-[#BB987D] hover:opacity-80 rounded-md mb-10"
-            size="md"
-            onClick={() =>
-              navigate.push(
-                "https://api.whatsapp.com/send/?phone=5555996442675&text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+cobertura+de+gestantes%21&type=phone_number&app_absent=0"
-              )
-            }
-          >
-            Eu Quero
-          </Button>
+          <Link href="https://api.whatsapp.com/send/?phone=5555996442675&text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+cobertura+de+gestantes%21&type=phone_number&app_absent=0">
+            <Button
+              endContent={<Heart size={20} />}
+              className="bg-[#BB987D] hover:opacity-80 rounded-md mb-10"
+              size="md"
+            >
+              Eu Quero
+            </Button>
+          </Link>
         </div>
         <SessionCarousel gallery={gestantesGallery} />
       </div>

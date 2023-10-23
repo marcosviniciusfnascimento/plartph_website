@@ -63,7 +63,7 @@ export default function SessoesPage() {
         initial="initial"
         animate="animate"
         transition={{ duration: 0.8, delay: 0.5 }}
-        className="text-zinc-800 lg:max-w-[50%] md:max-w-[75%] font-Geosans text-xl text-center pt-10 max-sm:px-10"
+        className="text-zinc-800 lg:max-w-[50%] md:max-w-[75%] font-Geosans text-xl text-center pt-10 max-sm:px-10 max-sm:pt-0"
       >
         Antes de uma sessão acontecer, todas as expectativas são alinhadas em
         uma reunião. Gosto de fazer assim para que tudo aconteça como você

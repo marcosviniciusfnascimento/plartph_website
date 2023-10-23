@@ -21,7 +21,7 @@ export default function PresetsPage() {
 
   return (
     <div className="bg-gradient-to-b from-zinc-100 to-[#9F9183] flex min-h-screen flex-col items-center justify-start w-full">
-      <div className="flex w-full flex-col space-y-3 items-center justify-start pt-32 text-center max-sm:px-10 pb-10 bg-gradient-to-b from-[#d6c1b0] to-zinc-200">
+      <div className="flex w-full flex-col space-y-3 items-center justify-start pt-32 text-center max-sm:px-10 pb-10 bg-zinc-200">
         <h5 className="font-Geosans text-2xl text-zinc-800">
           Deseja cores vibrantes e uma estética padrão em suas fotos?
         </h5>
@@ -139,19 +139,6 @@ export default function PresetsPage() {
             Estilo único e consistente de edição
           </h5>
         </AnimateSpan>
-      </div>
-      <div className="flex space-x-5 py-20 bg-zinc-100 px-20 max-sm:px-10 items-center justify-center w-full flex-row max-sm:flex-col">
-        <AnimateSpan
-          direction="vertical"
-          className="flex flex-col space-y-10 font-Geosans text-gray-500 text-5xl w-5/12 max-sm:text-3xl max-sm:w-full"
-        >
-          <h5>
-            Para utilizar, basta baixar os arquivos e aplicá-los as suas fotos
-            no Lightroom com um clique.
-          </h5>
-          <h5>Te mostro como é fácil!</h5>
-        </AnimateSpan>
-        <div className="h-full w-1/3 bg-zinc-700 max-sm:w-full">Vídeo</div>
       </div>
       <div className="bg-[#BB987D] flex flex-col space-y-10 items-center justify-start py-20 px-20 max-sm:px-10 w-full">
         <h5 className="font-Geosans text-3xl text-center">

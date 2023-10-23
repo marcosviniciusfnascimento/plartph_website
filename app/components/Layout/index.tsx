@@ -10,7 +10,7 @@ interface LayoutProps {
 
 export default function LayoutPages({ children }: LayoutProps) {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between mx-auto">
+    <main className="flex min-h-screen flex-col items-center justify-between w-full">
       <Navbar />
       <section className="w-full">{children}</section>
       <Footer />
