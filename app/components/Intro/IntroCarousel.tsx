@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import Image from "next/image";
 import { Carousel } from "antd";
 import Image2 from "../../assets/Home/carousel/Design sem nome.jpg";
 import Image3 from "../../assets/Home/carousel/Design sem nome (2).jpg";
