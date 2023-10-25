@@ -37,12 +37,12 @@ export default function PresetsPage() {
       </div>
       <div className="w-screen bg-primary items-center justify-center flex p-10 max-sm:p-0">
         <div className="relative w-[1248px] h-[702px] overflow-hidden">
-          <Image
+          <img
             src={bannerPresets}
             alt="bannerPresets"
             layout="fill"
             objectFit="cover"
-            priority={true}
+            ={true}
           />
         </div>
       </div>
@@ -152,11 +152,7 @@ export default function PresetsPage() {
       </div>
       <div className="bg-zinc-100 flex space-x-2 items-center justify-center w-full py-20 px-20 flex-row max-sm:flex-col max-sm:px-10">
         <div className="w-4/12 items-center justify-center h-full max-sm:w-full hidden max-sm:block mb-10">
-          <Image
-            src={bannerVenda}
-            alt="bannerVenda"
-            className="h-full w-full"
-          />
+          <img src={bannerVenda} alt="bannerVenda" className="h-full w-full" />
         </div>
         <div className="flex flex-col items-center justify-center space-y-5 w-4/12 max-sm:w-full">
           <AnimateSpan
@@ -195,19 +191,10 @@ export default function PresetsPage() {
           >
             Quero transformar minhas fotos
           </Button>
-          <Image
-            src={compraSegura}
-            alt="compraSegura"
-            height={106}
-            width={350}
-          />
+          <img src={compraSegura} alt="compraSegura" height={106} width={350} />
         </div>
         <div className="w-4/12 flex items-center justify-center h-full max-sm:w-full max-sm:mt-20 max-sm:hidden">
-          <Image
-            src={bannerVenda}
-            alt="bannerVenda"
-            className="h-full w-full"
-          />
+          <img src={bannerVenda} alt="bannerVenda" className="h-full w-full" />
         </div>
       </div>
       <div className="w-full flex items-center justify-center bg-[#BB987D] space-x-5 p-20 max-sm:flex-col flex-row max-sm:px-10">

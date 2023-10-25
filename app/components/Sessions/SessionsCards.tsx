@@ -31,9 +31,9 @@ export default function SessionsCards(props: SessionsCardsProps) {
       className="group rounded-lg relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
     >
       <div className="h-96 w-72 shadow-lg">
-        <Image
+        <img
           alt="cardImage"
-          src={image}
+          src={image.src}
           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
       </div>

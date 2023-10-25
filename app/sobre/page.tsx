@@ -11,13 +11,7 @@ export default function SobrePage() {
     <div className="w-full flex flex-col items-center justify-center pt-32 bg-gradient-to-b from-[#BB987D] to-zinc-200 pb-20">
       <Reveal width="100%">
         <div className="w-full flex items-center justify-center">
-          <Image
-            src={fabiolaImg}
-            alt="fabiola"
-            height={380}
-            width={250}
-            priority
-          />
+          <img src={fabiolaImg} alt="fabiola" height={380} width={250} />
         </div>
       </Reveal>
       <span className="pt-5">

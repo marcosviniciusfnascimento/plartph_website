@@ -41,7 +41,7 @@ export default function DuvidasPage() {
           }}
           className="overflow-hidden rounded-sm"
         >
-          <Image src={Image1} alt="Image1" width={300} height={650} />
+          <img src={Image1.src} alt="Image1" width={300} height={650} />
         </motion.div>
         <div className="flex flex-col space-y-10 w-1/2 py-5 max-sm:w-full max-sm:px-10">
           <span className="flex flex-col space-y-5">
@@ -87,7 +87,7 @@ export default function DuvidasPage() {
       <div className="w-full flex pt-14 items-center justify-center space-x-10 max-sm:flex-col bg-[#BB987D]">
         <div className="flex flex-col space-y-10 w-1/2 max-sm:w-full max-sm:px-10">
           <div className="overflow-hidden rounded-sm hidden max-sm:block">
-            <Image src={Image2} alt="Image1" width={300} height={650} />
+            <img src={Image2.src} alt="Image1" width={300} height={650} />
           </div>
           <span className="flex flex-col space-y-5">
             <AnimateH5
@@ -133,7 +133,7 @@ export default function DuvidasPage() {
           }}
           className="overflow-hidden rounded-sm pb-10 max-sm:hidden"
         >
-          <Image src={Image2} alt="Image1" width={300} height={650} />
+          <img src={Image2.src} alt="Image1" width={300} height={650} />
         </motion.div>
       </div>
     </div>

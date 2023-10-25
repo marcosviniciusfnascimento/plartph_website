@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import Image from "next/image";
@@ -84,13 +85,12 @@ export default function About() {
           transition={{ duration: 0.8, delay: 0.25 }}
           style={{ display: "relative" }}
         >
-          <Image
+          <img
             src={fabiolaImg}
             alt="fabiola"
             height={412}
             width={266}
             className="z-0"
-            priority
           />
         </motion.div>
         <motion.div
@@ -171,13 +171,7 @@ export default function About() {
           style={{ display: "relative" }}
           className="ml-52 absolute left-[40%] z-0"
         >
-          <Image
-            src={fabiolaImg}
-            alt="fabiola"
-            height={588}
-            width={416}
-            priority
-          />
+          <img src={fabiolaImg} alt="fabiola" height={588} width={416} />
         </motion.div>
         <motion.div
           variants={horizontalVariants}

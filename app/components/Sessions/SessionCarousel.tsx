@@ -23,8 +23,8 @@ function GetCarouselPage(image: StaticImageData) {
         className="group h-96 w-[97%] rounded-md overflow-hidden relative"
         key={image.src.toString()}
       >
-        <Image
-          src={image}
+        <img
+          src={image.src}
           alt="carouselImage"
           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
         />

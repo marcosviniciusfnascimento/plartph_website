@@ -1,12 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import Image from "next/image";
 import { Carousel } from "antd";
-import Image2 from "../../assets/Home/Amor que vira memória.svg";
-import Image3 from "../../assets/Home/Amor que vira memória (1).svg";
-import Image1 from "../../assets/Home/Amor que vira memória (2).svg";
-import Image1w from "../../assets/Home/AmorSv.svg";
-import Image3w from "../../assets/Home/PartoSv.svg";
-import Image2w from "../../assets/Home/NewbSv.svg";
+import Image2 from "../../assets/Home/carousel/Design sem nome.jpg";
+import Image3 from "../../assets/Home/carousel/Design sem nome (2).jpg";
+import Image1 from "../../assets/Home/carousel/Design sem nome (1).jpg";
 
 export default function IntroCarousel() {
   return (
@@ -22,23 +20,20 @@ export default function IntroCarousel() {
           pauseOnHover={false}
           autoplaySpeed={3000}
         >
-          <Image
-            src={Image1}
+          <img
+            src={Image1.src}
             alt="CarrouselImage"
             className="w-full h-auto"
-            priority
           />
-          <Image
-            src={Image2}
+          <img
+            src={Image2.src}
             alt="CarrouselImage"
             className="w-full h-auto"
-            priority
           />
-          <Image
-            src={Image3}
+          <img
+            src={Image3.src}
             alt="CarrouselImage"
             className="w-full h-auto"
-            priority
           />
         </Carousel>
       </div>
@@ -53,23 +48,20 @@ export default function IntroCarousel() {
           pauseOnHover={false}
           autoplaySpeed={3000}
         >
-          <Image
-            src={Image1w}
+          <img
+            src={Image2.src}
             alt="CarrouselImage"
             className="w-full h-auto"
-            priority
           />
-          <Image
-            src={Image2w}
+          <img
+            src={Image1.src}
             alt="CarrouselImage"
             className="w-full h-auto"
-            priority
           />
-          <Image
-            src={Image3w}
+          <img
+            src={Image3.src}
             alt="CarrouselImage"
             className="w-full h-auto"
-            priority
           />
         </Carousel>
       </div>

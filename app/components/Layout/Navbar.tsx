@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import {
   NavbarBrand,
   NavbarContent,
@@ -9,7 +10,7 @@ import {
 } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../../assets/PlartphSvg.svg";
+import Logo from "../../assets/PlartphSvg.png";
 import { usePathname } from "next/navigation";
 import { Instagram } from "lucide-react";
 import { BsWhatsapp } from "react-icons/bs";
@@ -66,7 +67,7 @@ export default function Navbar() {
         </NavbarContent>
         <NavbarBrand>
           <Link href="/">
-            <Image alt="Logo" src={Logo} width={130} height={40} />
+            <img alt="Logo" src={Logo.src} width={130} height={40} />
           </Link>
         </NavbarBrand>
         <NavbarContent justify="end">
@@ -107,7 +108,7 @@ export default function Navbar() {
       >
         <NavbarBrand>
           <Link href="/">
-            <Image alt="Logo" src={Logo} width={150} height={50} />
+            <img alt="Logo" src={Logo.src} width={150} height={50} />
           </Link>
         </NavbarBrand>
         <NavbarContent justify="center">

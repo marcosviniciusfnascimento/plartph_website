@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { FemininosImages } from "@/app/assets/Femininos";
 import { gestantesImages } from "@/app/assets/Gestantes";
 import { HomeImages } from "@/app/assets/Home";
@@ -24,8 +25,8 @@ export default function MansoryGallery() {
       {sortedImageArray.map((image, index) => (
         <Reveal width="100%" key={image.src.toString()} delay={0.05 * index}>
           <div className="relative mb-4 before:content-[''] before:rounded-md before:absolute before:inset-0 before:bg-black before:bg-opacity-20">
-            <Image
-              src={image}
+            <img
+              src={image.src}
               alt="galleryImage"
               className="w-full rounded-md h-auto"
             />

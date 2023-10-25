@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { Variants, motion } from "framer-motion";
@@ -34,16 +35,14 @@ export default function ValoresNatal() {
         className="w-full flex flex-col items-center justify-start relative"
       >
         <div className="w-full flex flex-col items-center h-96 justify-center relative">
-          <Image
+          <img
             src={TitleImage}
             alt="SessaoNatal"
-            priority
             className="w-full h-96 absolute max-sm:hidden"
           />
-          <Image
+          <img
             src={TitleMobile}
             alt="SessaoNatal"
-            priority
             className="w-full h-96 absolute hidden max-sm:block"
           />
           <AnimateH5
@@ -65,10 +64,9 @@ export default function ValoresNatal() {
         }}
         className="flex flex-col py-16 px-10 items-center justify-center relative w-full"
       >
-        <Image
+        <img
           src={textura}
           alt="textura"
-          priority
           className="z-10 w-full h-full absolute object-cover"
         />
         <div className="w-96 z-20 space-y-5 flex items-start justify-center flex-col max-sm:px-10">
@@ -96,14 +94,14 @@ export default function ValoresNatal() {
         }}
         className="flex flex-col pb-16 px-10 items-center relative justify-start space-y-10 bg-zinc-200 w-full"
       >
-        <Image src={magica} alt="magica" width={250} height={20} />
+        <img src={magica} alt="magica" width={250} height={20} />
 
-        <Image
+        <img
           src={janela}
           alt="magica"
           className="absolute right-0 top-0 w-[800px] max-sm:hidden"
         />
-        <Image
+        <img
           src={janela_mobile}
           alt="magica"
           className="absolute right-0 top-0 h-[200px] hidden max-sm:block"
@@ -129,7 +127,7 @@ export default function ValoresNatal() {
           </AnimateH5>
         </div>
         <AnimateSpan direction="vertical">
-          <Image
+          <img
             src={exclusivo}
             alt="magica"
             width={200}
@@ -137,7 +135,7 @@ export default function ValoresNatal() {
             className=" top-[54%] right-[40%] max-sm:hidden"
           />
 
-          <Image
+          <img
             src={exclusivo}
             alt="magica"
             width={120}
@@ -201,20 +199,20 @@ export default function ValoresNatal() {
         }}
         className="flex flex-col pb-16 px-10 items-center relative justify-start space-y-10 bg-zinc-100 w-full"
       >
-        <Image
+        <img
           src={natalEncantado}
           alt="magica"
           width={400}
           height={200}
           className="max-sm:hidden"
         />
-        <Image
+        <img
           src={natal_mobile}
           alt="magica"
           height={120}
           className="hidden max-sm:block"
         />
-        <Image
+        <img
           src={pinheirMobile}
           alt="magica"
           className="absolute left-0 bottom-0 w-[200px] max-sm:w-[80px]"
@@ -239,7 +237,7 @@ export default function ValoresNatal() {
             Cenário casa | newborn | bebê
           </AnimateH5>
         </div>
-        <Image
+        <img
           src={exclusivo}
           alt="magica"
           width={200}
@@ -247,7 +245,7 @@ export default function ValoresNatal() {
           className="max-sm:hidden"
         />
 
-        <Image
+        <img
           src={exclusivo}
           alt="magica"
           width={120}
@@ -368,8 +366,8 @@ export default function ValoresNatal() {
             máximo.
           </AnimateH5>
         </div>
-        <Image src={vagaslimitadas} alt="magica" width={400} height={200} />
-        <Image src={sofa} alt="magica" width={400} height={200} />
+        <img src={vagaslimitadas} alt="magica" width={400} height={200} />
+        <img src={sofa} alt="magica" width={400} height={200} />
       </motion.div>
       <motion.div
         variants={fadeInVariant}
@@ -382,13 +380,12 @@ export default function ValoresNatal() {
         }}
         className="flex flex-col py-16 px-10 items-center justify-center relative w-full"
       >
-        <Image
+        <img
           src={textura}
           alt="textura"
-          priority
           className="z-10 w-full h-full absolute object-cover"
         />
-        <Image
+        <img
           src={rodape}
           alt="magica"
           width={400}

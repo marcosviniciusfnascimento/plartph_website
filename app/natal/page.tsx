@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -92,16 +93,14 @@ export default function NatalPage() {
         className="w-full flex flex-col items-center justify-start relative"
       >
         <div className="w-full flex flex-col items-center h-96 justify-center relative">
-          <Image
+          <img
             src={TitleImage}
             alt="SessaoNatal"
-            priority
             className="w-full pr-16 h-96 absolute max-sm:hidden"
           />
-          <Image
+          <img
             src={TitleMobile}
             alt="SessaoNatal"
-            priority
             className="w-full h-96 absolute hidden max-sm:block"
           />
           <h5 className="font-theseasonsit  text-zinc-800 text-3xl ml-64 mt-56 absolute max-sm:ml-32 max-sm:text-xl max-sm:mt-32">
@@ -120,10 +119,9 @@ export default function NatalPage() {
         }}
         className="flex flex-col py-16 px-10 items-center justify-center relative w-full"
       >
-        <Image
+        <img
           src={textura}
           alt="textura"
-          priority
           className="z-10 w-full h-full absolute object-cover"
         />
         <div className="w-96 z-20 space-y-5 flex items-start justify-center flex-col max-sm:px-10">
@@ -144,8 +142,8 @@ export default function NatalPage() {
         {sortedImageArray.map((image, index) => (
           <Reveal width="100%" key={image.src.toString()} delay={0.05 * index}>
             <div className="relative mb-4 before:content-[''] before:rounded-md before:absolute before:inset-0 before:bg-black before:bg-opacity-20">
-              <Image
-                src={image}
+              <img
+                src={image.src}
                 alt="galleryImage"
                 className="w-full rounded-md object-cover"
               />
@@ -159,25 +157,20 @@ export default function NatalPage() {
             Cenário
           </h5>
           <div className="relative w-full h-[450px] max-sm:h-auto flex z-20 items-center justify-center">
-            <Image
-              src={bgImage}
+            <img
+              src={bgImage.src}
               alt="bg"
               className="rounded-lg w-[578px] max-sm:w-[300px]"
             />
             <div className="backdrop-blur-xl absolute h-full w-[578px] z-10 rounded-lg  max-sm:w-[300px]" />
-            <Image
-              src={cadeado}
-              alt="bg"
-              width={350}
-              className="absolute z-20"
-            />
+            <img src={cadeado} alt="bg" width={350} className="absolute z-20" />
           </div>
-          <Image
+          <img
             src={arvore}
             alt="arvore"
             className="absolute w-[250px] bottom-0 left-0 max-sm:hidden"
           />
-          <Image
+          <img
             src={janela}
             alt="janela"
             className="absolute w-[120px] top-0 right-0 max-sm:hidden"
@@ -199,7 +192,7 @@ export default function NatalPage() {
           }}
           className="flex flex-col pb-16 px-10 items-center relative justify-start space-y-10 bg-zinc-200 w-full"
         >
-          <Image src={magica} alt="magica" width={250} height={20} />
+          <img src={magica} alt="magica" width={250} height={20} />
 
           <div className="flex flex-col space-y-2">
             <AnimateH5
@@ -222,7 +215,7 @@ export default function NatalPage() {
             </AnimateH5>
           </div>
           <AnimateSpan direction="vertical">
-            <Image
+            <img
               src={exclusivo}
               alt="magica"
               width={200}
@@ -230,7 +223,7 @@ export default function NatalPage() {
               className=" top-[54%] right-[40%] max-sm:hidden"
             />
 
-            <Image
+            <img
               src={exclusivo}
               alt="magica"
               width={120}
@@ -294,20 +287,20 @@ export default function NatalPage() {
           }}
           className="flex flex-col pb-16 px-10 items-center relative justify-start space-y-10 bg-zinc-100 w-full"
         >
-          <Image
+          <img
             src={natalEncantado}
             alt="magica"
             width={400}
             height={200}
             className="max-sm:hidden"
           />
-          <Image
+          <img
             src={natal_mobile}
             alt="magica"
             height={120}
             className="hidden max-sm:block"
           />
-          <Image
+          <img
             src={pinheirMobile}
             alt="magica"
             className="absolute left-0 bottom-0 w-[200px] max-sm:w-[80px]"
@@ -332,7 +325,7 @@ export default function NatalPage() {
               Cenário casa | newborn | bebê
             </AnimateH5>
           </div>
-          <Image
+          <img
             src={exclusivo}
             alt="magica"
             width={200}
@@ -340,7 +333,7 @@ export default function NatalPage() {
             className="max-sm:hidden"
           />
 
-          <Image
+          <img
             src={exclusivo}
             alt="magica"
             width={120}
@@ -504,8 +497,8 @@ export default function NatalPage() {
             máximo.
           </AnimateH5>
         </div>
-        <Image src={vagaslimitadas} alt="magica" width={400} height={200} />
-        <Image src={sofa} alt="magica" width={400} height={200} />
+        <img src={vagaslimitadas} alt="magica" width={400} height={200} />
+        <img src={sofa} alt="magica" width={400} height={200} />
       </motion.div>
       <motion.div
         variants={fadeInVariant}
@@ -518,13 +511,12 @@ export default function NatalPage() {
         }}
         className="flex flex-col py-16 px-10 items-center justify-center relative w-full"
       >
-        <Image
+        <img
           src={textura}
           alt="textura"
-          priority
           className="z-10 w-full h-full absolute object-cover"
         />
-        <Image
+        <img
           src={rodape}
           alt="magica"
           width={400}
