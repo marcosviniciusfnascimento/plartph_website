@@ -18,26 +18,7 @@ import rodape from "../assets/natal/rodape.svg";
 import sofa from "../assets/natal/sofa.svg";
 import AnimateH5 from "../components/Animate/h5";
 import AnimateSpan from "../components/Animate/span";
-
-export const downUpVariant: Variants = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-  },
-};
-
-export const fadeInVariant: Variants = {
-  initial: {
-    opacity: 0,
-  },
-  animate: {
-    opacity: 1,
-  },
-};
+import { fadeInVariant, downUpVariant } from "../components/Animate/Variants";
 
 export default function ValoresNatal() {
   return (

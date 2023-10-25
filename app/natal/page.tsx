@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import { fadeInVariant } from "../valores/page";
 import Image from "next/image";
 import TitleImage from "../assets/natal/titulo.svg";
 import TitleMobile from "../assets/natal/sessaoNatalMobile.svg";
@@ -20,6 +19,7 @@ import Link from "next/link";
 import { Button } from "@nextui-org/react";
 import { Clock1, Heart } from "lucide-react";
 import { HorariosDomingo, HorariosSabado, HorariosType } from "./horarios";
+import { fadeInVariant } from "../components/Animate/Variants";
 
 const getHorarioItem = (horario: HorariosType, delay: number) => {
   return (
