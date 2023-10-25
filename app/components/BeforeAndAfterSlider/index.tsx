@@ -1,7 +1,7 @@
 import BeforeAndAfterSlider from "./BeforeAndAfterSlider";
 
-const before1 = require("../../assets/Presets/before1.JPG");
-const after1 = require("../../assets/Presets/after1.JPG");
+const before1 = require("../../assets/Presets/before1.jpg");
+const after1 = require("../../assets/Presets/after1.jpg");
 
 const before2 = require("../../assets/Presets/before2.jpg");
 const after2 = require("../../assets/Presets/after2.jpg");
