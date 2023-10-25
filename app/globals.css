@@ -29,16 +29,16 @@ body {
 
 @font-face {
   font-family: "Geosans";
-  src: url("./fonts/GeosansLight.ttf");
+  src: url("./Fonts/GeosansLight.ttf");
 }
 
 @font-face {
   font-family: "TheSeasons";
-  src: url("./fonts/TheSeasons/Fontspring-DEMO-theseasons-reg.otf");
+  src: url("./Fonts/TheSeasons/Fontspring-DEMO-theseasons-reg.otf");
 }
 
 @font-face {
   font-family: "TheSeasonsIt";
   /* src: url("./fonts/TheSeasons/Fontspring-DEMO-theseasons-lt.otf"); */
-  src: url("./fonts/CormorantGaramond-Regular.ttf");
+  src: url("./Fonts/CormorantGaramond-Regular.ttf");
 }
