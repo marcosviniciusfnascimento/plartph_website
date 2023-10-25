@@ -37,13 +37,7 @@ export default function PresetsPage() {
       </div>
       <div className="w-screen bg-primary items-center justify-center flex p-10 max-sm:p-0">
         <div className="relative w-[1248px] h-[702px] overflow-hidden">
-          <img
-            src={bannerPresets}
-            alt="bannerPresets"
-            layout="fill"
-            objectFit="cover"
-            ={true}
-          />
+          <img src={bannerPresets.src} alt="bannerPresets" />
         </div>
       </div>
       <div className="bg-stone-500/70 flex flex-col  w-full space-y-3 items-center justify-center pt-16 max-sm:px-10">
@@ -191,10 +185,19 @@ export default function PresetsPage() {
           >
             Quero transformar minhas fotos
           </Button>
-          <img src={compraSegura} alt="compraSegura" height={106} width={350} />
+          <img
+            src={compraSegura.src}
+            alt="compraSegura"
+            height={106}
+            width={350}
+          />
         </div>
         <div className="w-4/12 flex items-center justify-center h-full max-sm:w-full max-sm:mt-20 max-sm:hidden">
-          <img src={bannerVenda} alt="bannerVenda" className="h-full w-full" />
+          <img
+            src={bannerVenda.src}
+            alt="bannerVenda"
+            className="h-full w-full"
+          />
         </div>
       </div>
       <div className="w-full flex items-center justify-center bg-[#BB987D] space-x-5 p-20 max-sm:flex-col flex-row max-sm:px-10">
