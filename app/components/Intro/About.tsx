@@ -115,8 +115,8 @@ export default function About() {
             emocionante. As fotos trarão de volta lembranças de momentos felizes
             e ajudarão a manter essas memórias vivas por muitos anos.
           </p>
-          <p className="font-theseasons text-zinc-800 text-lg font-semibold w-full px-12 z-10 mt-2 text-center">
-            Conheça meu trabalho !
+          <p className="font-theseasonsit text-zinc-800 text-lg font-semibold w-full px-12 z-10 mt-2 text-center">
+            Conheça meu trabalho!
           </p>
           <Link href={"/sessoes"}>
             <Button
@@ -200,8 +200,8 @@ export default function About() {
             emocionante. As fotos trarão de volta lembranças de momentos felizes
             e ajudarão a manter essas memórias vivas por muitos anos.
           </p>
-          <p className="font-theseasons text-zinc-800 text-lg font-semibold w-96 z-10 mt-2">
-            Conheça meu trabalho !
+          <p className="font-theseasonsit text-zinc-800 text-lg font-semibold w-96 z-10 mt-2">
+            Conheça meu trabalho!
           </p>
           <Link href="/sessoes">
             <Button
