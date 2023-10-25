@@ -1,16 +1,16 @@
 import BeforeAndAfterSlider from "./BeforeAndAfterSlider";
 
-const before1 = require("../../assets/Presets/before1.jpg");
-const after1 = require("../../assets/Presets/after1.jpg");
+import before1 from "../../assets/Presets/before1.jpg";
+import after1 from "../../assets/Presets/after1.jpg";
 
-const before2 = require("../../assets/Presets/before2.jpg");
-const after2 = require("../../assets/Presets/after2.jpg");
+import before2 from "../../assets/Presets/before2.jpg";
+import after2 from "../../assets/Presets/after2.jpg";
 
-const before3 = require("../../assets/Presets/before3.JPG");
-const after3 = require("../../assets/Presets/after3.JPG");
+import before3 from "../../assets/Presets/before3.jpg";
+import after3 from "../../assets/Presets/after3.jpg";
 
-const before4 = require("../../assets/Presets/before4.JPG");
-const after4 = require("../../assets/Presets/after4.JPG");
+import before4 from "../../assets/Presets/before4.jpg";
+import after4 from "../../assets/Presets/after4.jpg";
 
 export default function PresetsSlider() {
   return (
