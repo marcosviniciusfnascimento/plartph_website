@@ -37,3 +37,14 @@ export const SessionsConfig: SessionsConfigType[] = [
     imagem: CapaFeminino,
   },
 ];
+
+export const scrollIntoTheView = (id: string) => {
+  let element = document.getElementById(id) as HTMLElement;
+  if (!element) return;
+
+  element.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+    inline: "nearest",
+  });
+};

@@ -2,23 +2,12 @@
 
 import SessionsCards from "../components/Sessions/SessionsCards";
 import { useEffect, useState } from "react";
-import { SessionsConfig } from "./Configurations";
+import { SessionsConfig, scrollIntoTheView } from "./Configurations";
 import GestanteSession from "../components/Sessions/GestanteSession";
 import NewBornSession from "../components/Sessions/NewBornSession";
 import PartoSession from "../components/Sessions/PartoSession";
 import FemininoSession from "../components/Sessions/FemininoSession";
 import { Variants, motion } from "framer-motion";
-
-export const scrollIntoTheView = (id: string) => {
-  let element = document.getElementById(id) as HTMLElement;
-  if (!element) return;
-
-  element.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-    inline: "nearest",
-  });
-};
 
 const fadeInAnimationVariants: Variants = {
   initial: {
