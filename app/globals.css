@@ -27,6 +27,18 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+::-webkit-scrollbar {
+  width: 0.001rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
 @font-face {
   font-family: "Geosans";
   src: url("./Fonts/GeosansLight.ttf");

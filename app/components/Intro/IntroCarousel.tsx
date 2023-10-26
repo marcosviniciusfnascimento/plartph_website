@@ -1,9 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import { Carousel } from "antd";
-import Image2 from "../../assets/Home/carousel/Design sem nome.jpg";
-import Image3 from "../../assets/Home/carousel/Design sem nome (2).jpg";
-import Image1 from "../../assets/Home/carousel/Design sem nome (1).jpg";
+import Desktop1 from "../../assets/Home/carousel/1.jpg";
+import Desktop2 from "../../assets/Home/carousel/2.jpg";
+import Desktop3 from "../../assets/Home/carousel/3.jpg";
+import mobile1 from "../../assets/Home/carousel/mobile1.jpg";
+import mobile2 from "../../assets/Home/carousel/mobile2.jpg";
+import mobile3 from "../../assets/Home/carousel/mobile3.jpg";
 
 export default function IntroCarousel() {
   return (
@@ -20,17 +23,17 @@ export default function IntroCarousel() {
           autoplaySpeed={3000}
         >
           <img
-            src={Image1.src}
+            src={Desktop1.src}
             alt="CarrouselImage"
             className="w-full h-auto"
           />
           <img
-            src={Image2.src}
+            src={Desktop2.src}
             alt="CarrouselImage"
             className="w-full h-auto"
           />
           <img
-            src={Image3.src}
+            src={Desktop3.src}
             alt="CarrouselImage"
             className="w-full h-auto"
           />
@@ -48,17 +51,17 @@ export default function IntroCarousel() {
           autoplaySpeed={3000}
         >
           <img
-            src={Image2.src}
+            src={mobile1.src}
             alt="CarrouselImage"
             className="w-full h-auto"
           />
           <img
-            src={Image1.src}
+            src={mobile2.src}
             alt="CarrouselImage"
             className="w-full h-auto"
           />
           <img
-            src={Image3.src}
+            src={mobile3.src}
             alt="CarrouselImage"
             className="w-full h-auto"
           />

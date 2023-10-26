@@ -33,11 +33,9 @@ export const horizontalVariants: Variants = {
 export const InvertHorizontalVariants: Variants = {
   initial: {
     opacity: 0,
-    x: 300,
   },
   animate: {
     opacity: 1,
-    x: 0,
   },
 };
 
@@ -171,7 +169,7 @@ export default function About() {
           style={{ display: "relative" }}
           className="ml-52 absolute left-[40%] z-0"
         >
-          <img src={fabiolaImg.src} alt="fabiola" height={588} width={416} />
+          <img src={fabiolaImg.src} alt="fabiola" height={488} width={356} />
         </motion.div>
         <motion.div
           variants={horizontalVariants}
