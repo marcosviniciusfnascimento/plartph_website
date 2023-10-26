@@ -10,7 +10,7 @@ import {
 } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../../assets/PlartphSvg.png";
+import Logo from "../../assets/PlartphSvg.svg";
 import { usePathname } from "next/navigation";
 import { Instagram } from "lucide-react";
 import { BsWhatsapp } from "react-icons/bs";
@@ -67,7 +67,7 @@ export default function Navbar() {
         </NavbarContent>
         <NavbarBrand>
           <Link href="/">
-            <img alt="Logo" src={Logo.src} width={130} height={40} />
+            <Image alt="Logo" src={Logo} width={130} height={40} />
           </Link>
         </NavbarBrand>
         <NavbarContent justify="end">

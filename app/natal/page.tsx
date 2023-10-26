@@ -14,14 +14,14 @@ import magica from "../assets/natal/magica.svg";
 import AnimateH5 from "../components/Animate/h5";
 import AnimateSpan from "../components/Animate/span";
 import exclusivo from "../assets/natal/exclusivo.svg";
-import arvore from "../assets/natal/pinheiroMobile.svg";
-import janela from "../assets/natal/janela_mobile.svg";
+import janela_mobile from "../assets/natal/janela (2).svg";
+import arvore from "../assets/natal/arvore (2).svg";
 import Link from "next/link";
 import { Button } from "@nextui-org/react";
 import { Clock1, Heart } from "lucide-react";
 import { HorariosDomingo, HorariosSabado, HorariosType } from "./horarios";
 import { downUpVariant, fadeInVariant } from "../components/Animate/Variants";
-import textura from "../assets/natal/textura.svg";
+import textura from "../assets/natal/textura.png";
 import pinheirMobile from "../assets/natal/pinheiroMobile.svg";
 import rodape from "../assets/natal/rodape.svg";
 import sofa from "../assets/natal/sofa.svg";
@@ -93,13 +93,15 @@ export default function NatalPage() {
         className="w-full flex flex-col items-center justify-start relative"
       >
         <div className="w-full flex flex-col items-center h-96 justify-center relative">
-          <img
+          <Image
             src={TitleImage}
             alt="SessaoNatal"
             className="w-full pr-16 h-96 absolute max-sm:hidden"
+            priority
           />
-          <img
+          <Image
             src={TitleMobile}
+            priority
             alt="SessaoNatal"
             className="w-full h-96 absolute hidden max-sm:block"
           />
@@ -117,12 +119,12 @@ export default function NatalPage() {
           duration: 0.8,
           delay: 1.5,
         }}
-        className="flex flex-col py-16 px-10 items-center justify-center relative w-full"
+        className="flex flex-col py-16 px-10 items-center justify-center relative w-full bg-[#6a7153]"
       >
         <img
-          src={textura}
+          src={textura.src}
           alt="textura"
-          className="z-10 w-full h-full absolute object-cover"
+          className="z-10 w-full h-full absolute object-cover opacity-30"
         />
         <div className="w-96 z-20 space-y-5 flex items-start justify-center flex-col max-sm:px-10">
           <AnimateH5
@@ -163,17 +165,25 @@ export default function NatalPage() {
               className="rounded-lg w-[578px] max-sm:w-[300px]"
             />
             <div className="backdrop-blur-xl absolute h-full w-[578px] z-10 rounded-lg  max-sm:w-[300px]" />
-            <img src={cadeado} alt="bg" width={350} className="absolute z-20" />
+            <Image
+              priority
+              src={cadeado}
+              alt="bg"
+              width={350}
+              className="absolute z-20"
+            />
           </div>
-          <img
+          <Image
             src={arvore}
-            alt="arvore"
+            priority
+            alt="pinheiro"
             className="absolute w-[250px] bottom-0 left-0 max-sm:hidden"
           />
-          <img
-            src={janela}
+          <Image
+            priority
+            src={janela_mobile}
             alt="janela"
-            className="absolute w-[120px] top-0 right-0 max-sm:hidden"
+            className="absolute w-[190px] top-0 right-0 max-sm:hidden"
           />
         </div>
       </Reveal>
@@ -192,7 +202,7 @@ export default function NatalPage() {
           }}
           className="flex flex-col pb-16 px-10 items-center relative justify-start space-y-10 bg-zinc-200 w-full"
         >
-          <img src={magica} alt="magica" width={250} height={20} />
+          <Image priority src={magica} alt="magica" width={250} height={20} />
 
           <div className="flex flex-col space-y-2">
             <AnimateH5
@@ -215,7 +225,8 @@ export default function NatalPage() {
             </AnimateH5>
           </div>
           <AnimateSpan direction="vertical">
-            <img
+            <Image
+              priority
               src={exclusivo}
               alt="magica"
               width={200}
@@ -223,7 +234,8 @@ export default function NatalPage() {
               className=" top-[54%] right-[40%] max-sm:hidden"
             />
 
-            <img
+            <Image
+              priority
               src={exclusivo}
               alt="magica"
               width={120}
@@ -287,21 +299,23 @@ export default function NatalPage() {
           }}
           className="flex flex-col pb-16 px-10 items-center relative justify-start space-y-10 bg-zinc-100 w-full"
         >
-          <img
+          <Image
             src={natalEncantado}
             alt="magica"
             width={400}
             height={200}
+            priority
             className="max-sm:hidden"
           />
-          <img
+          <Image
             src={natal_mobile}
             alt="magica"
+            priority
             height={120}
             className="hidden max-sm:block"
           />
-          <img
-            src={pinheirMobile}
+          <Image
+            src={arvore}
             alt="magica"
             className="absolute left-0 bottom-0 w-[200px] max-sm:w-[80px]"
           />
@@ -325,19 +339,21 @@ export default function NatalPage() {
               Cenário casa | newborn | bebê
             </AnimateH5>
           </div>
-          <img
+          <Image
             src={exclusivo}
             alt="magica"
             width={200}
             height={40}
+            priority
             className="max-sm:hidden"
           />
 
-          <img
+          <Image
             src={exclusivo}
             alt="magica"
             width={120}
             height={50}
+            priority
             className="right-12 max-sm:block hidden"
           />
           <AnimateH5
@@ -497,8 +513,14 @@ export default function NatalPage() {
             máximo.
           </AnimateH5>
         </div>
-        <img src={vagaslimitadas} alt="magica" width={400} height={200} />
-        <img src={sofa} alt="magica" width={400} height={200} />
+        <Image
+          priority
+          src={vagaslimitadas}
+          alt="magica"
+          width={400}
+          height={200}
+        />
+        <Image priority src={sofa} alt="magica" width={400} height={200} />
       </motion.div>
       <motion.div
         variants={fadeInVariant}
@@ -509,15 +531,16 @@ export default function NatalPage() {
           duration: 0.8,
           delay: 1.5,
         }}
-        className="flex flex-col py-16 px-10 items-center justify-center relative w-full"
+        className="flex flex-col py-16 px-10 items-center justify-center relative w-full bg-[#6a7153]"
       >
         <img
-          src={textura}
+          src={textura.src}
           alt="textura"
-          className="z-10 w-full h-full absolute object-cover"
+          className="z-10 w-full h-full absolute object-cover opacity-30"
         />
-        <img
+        <Image
           src={rodape}
+          priority
           alt="magica"
           width={400}
           height={200}

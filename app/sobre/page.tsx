@@ -1,5 +1,5 @@
 import { Instagram } from "lucide-react";
-import fabiolaImg from "../assets/Fabiola.svg";
+import fabiolaImg from "../assets/Fabiola.png";
 import Image from "next/image";
 import Link from "next/link";
 import { BsWhatsapp } from "react-icons/bs";
@@ -11,7 +11,7 @@ export default function SobrePage() {
     <div className="w-full flex flex-col items-center justify-center pt-32 bg-gradient-to-b from-[#BB987D] to-zinc-200 pb-20">
       <Reveal width="100%">
         <div className="w-full flex items-center justify-center">
-          <img src={fabiolaImg} alt="fabiola" height={380} width={250} />
+          <img src={fabiolaImg.src} alt="fabiola" height={380} width={250} />
         </div>
       </Reveal>
       <span className="pt-5">

@@ -2,7 +2,7 @@
 "use client";
 
 import Image from "next/image";
-import fabiolaImg from "../../assets/Fabiola.svg";
+import fabiolaImg from "../../assets/Fabiola.png";
 import { Button } from "@nextui-org/react";
 import { ArrowRight } from "lucide-react";
 import { Variants, motion } from "framer-motion";
@@ -86,7 +86,7 @@ export default function About() {
           style={{ display: "relative" }}
         >
           <img
-            src={fabiolaImg}
+            src={fabiolaImg.src}
             alt="fabiola"
             height={412}
             width={266}
@@ -171,7 +171,7 @@ export default function About() {
           style={{ display: "relative" }}
           className="ml-52 absolute left-[40%] z-0"
         >
-          <img src={fabiolaImg} alt="fabiola" height={588} width={416} />
+          <img src={fabiolaImg.src} alt="fabiola" height={588} width={416} />
         </motion.div>
         <motion.div
           variants={horizontalVariants}
