@@ -421,7 +421,7 @@ export default function NatalPage() {
               direction="vertical"
               className="font-Geosans text-zinc-800 text-2xl text-center"
             >
-              Sábado (24/11)
+              Sábado (25/11)
             </AnimateH5>
             <AnimateH5
               direction="vertical"
@@ -440,7 +440,7 @@ export default function NatalPage() {
               direction="vertical"
               className="font-Geosans text-zinc-800 text-xl text-center"
             >
-              Domingo (25/11)
+              Domingo (26/11)
             </AnimateH5>
             <div className="flex flex-col space-y-3 items-center justify-center">
               {HorariosDomingo.map((horario, index) =>
