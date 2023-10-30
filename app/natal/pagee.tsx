@@ -34,7 +34,7 @@ export const getHorarioItem = (horario: HorariosType, delay: number) => {
       {horario.situacao === "Disponível" && (
         <Link
           target="_blank"
-          href={`https://api.whatsapp.com/send/?phone=5555996442675&text=Ol%C3%A1%2C+gostaria+de+reservar+o+hor%C3%A1rio+das+${horarioreserva}+para+o+dia+24%21&type=phone_number&app_absent=0`}
+          href={`https://api.whatsapp.com/send/?phone=5555996442675&text=Ol%C3%A1%2C+gostaria+de+reservar+o+hor%C3%A1rio+das+${horarioreserva}+para+o+dia+25%21&type=phone_number&app_absent=0`}
         >
           <div className="flex flex-col space-y-3">
             <span className="flex space-x-10 items-center justify-between w-[370px]">
