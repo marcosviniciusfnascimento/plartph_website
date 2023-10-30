@@ -8,8 +8,8 @@ import Providers from "./providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Plartph",
-  description: "Plartph - Fotografia Materna",
+  title: "Plartph - Fotografia Materna",
+  description: "Transformo teu amor em memória! Acesse para saber mais...",
 };
 
 export default function RootLayout({

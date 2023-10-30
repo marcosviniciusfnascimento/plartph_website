@@ -37,14 +37,14 @@ export default function BeforeAndAfterSlider(props: BeforeAndAfterSliderProps) {
     <Reveal width="100%">
       <div className="w-full relative" onMouseUp={handleMouseUp}>
         <div
-          className="relative w-full rounded-md max-w-[700px] aspect-[70/90] m-auto overflow-hidden select-none"
+          className="relative w-full rounded-md max-w-[700px]  m-auto overflow-hidden select-none"
           onMouseMove={handleMove}
           onMouseDown={handleMouseDown}
         >
           <img alt="beforeImage" src={beforeImage.src} />
 
           <div
-            className="absolute top-0 left-0 right-0 rounded-md w-full max-w-[700px] aspect-[70/90] m-auto overflow-hidden select-none"
+            className="absolute top-0 left-0 right-0 rounded-md w-full max-w-[700px]  m-auto overflow-hidden select-none"
             style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
           >
             <img alt="afterImage" src={afterImage.src} />
