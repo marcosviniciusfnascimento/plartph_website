@@ -62,7 +62,7 @@ export default function Navbar() {
         <NavbarContent>
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Abrir Menu" : "Fechar Menu"}
-            className="text-zinc-800"
+            className="text-white"
           />
         </NavbarContent>
         <NavbarBrand>
@@ -72,10 +72,7 @@ export default function Navbar() {
         </NavbarBrand>
         <NavbarContent justify="end">
           <Link href={"http://instagram.com/plartph"} target="_blank">
-            <Instagram
-              className="text-zinc-700 hover:text-zinc-400"
-              size={30}
-            />
+            <Instagram className="text-white hover:text-zinc-400" size={30} />
           </Link>
           <Link
             href={
@@ -83,10 +80,7 @@ export default function Navbar() {
             }
             target="_blank"
           >
-            <BsWhatsapp
-              className="text-zinc-700 hover:text-zinc-400"
-              size={27}
-            />
+            <BsWhatsapp className="text-white hover:text-zinc-400" size={27} />
           </Link>
         </NavbarContent>
         <NavbarMenu

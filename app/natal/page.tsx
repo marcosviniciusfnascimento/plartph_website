@@ -18,9 +18,11 @@ import vagasLimitadas from "../assets/natal/VagasLimitadasEnd.svg";
 import arvore from "../assets/natal/arvore (2).svg";
 import AnimateH5 from "../components/Animate/h5";
 import { HorariosSabado, HorariosType } from "./horarios";
-import { Link, Clock1 } from "lucide-react";
+import { Clock1, Heart } from "lucide-react";
 import AnimateSpan from "../components/Animate/span";
 import { getHorarioItem } from "./pagee";
+import { Button } from "@nextui-org/react";
+import Link from "next/link";
 
 export default function Page() {
   const sortedImageArray = Object.values(natalGalleryImages).sort(
@@ -32,7 +34,16 @@ export default function Page() {
         <div className="w-full h-full bg-[#D7D2CC]">
           <Image src={pagina1mobile} alt="bg" className="h-full w-full" />
         </div>
-        <div className="w-full bg-[#D7D2CC]">
+        <div className="w-full bg-[#D7D2CC] flex flex-col items-center justify-center">
+          <Link
+            href="https://api.whatsapp.com/send/?phone=5555996442675&text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+as+sessoes+de+natal%21&type=phone_number&app_absent=0"
+            target="_blank"
+          >
+            <Button className="bg-[#8A5B39] text-white font-Geosans rounded-md my-5">
+              Quero entrar em contato
+              <Heart size={15} />
+            </Button>
+          </Link>
           <Image src={pagina2} alt="pagine1" className="h-[440px]" />
         </div>
         <div className=" pt-10 flex flex-col items-center justify-center bg-[#8A5B39]">
@@ -96,7 +107,16 @@ export default function Page() {
 
       <div className="w-full flex flex-col max-sm:hidden">
         <Image src={pagina1} alt="pagine1" className="w-full h-full" />
-        <div className="w-full bg-[#D7D2CC]">
+        <div className="w-full bg-[#D7D2CC] flex flex-col items-center justify-center">
+          <Link
+            href="https://api.whatsapp.com/send/?phone=5555996442675&text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+as+sessoes+de+natal%21&type=phone_number&app_absent=0"
+            target="_blank"
+          >
+            <Button className="bg-[#8A5B39] text-white font-Geosans rounded-md my-5">
+              Quero entrar em contato
+              <Heart size={15} />
+            </Button>
+          </Link>
           <Image src={pagina2} alt="pagine1" className="w-full h-full" />
         </div>
         <div className=" pt-10 flex flex-col items-center justify-center bg-[#8A5B39]">
