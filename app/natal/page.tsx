@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import pagina1mobile from "../assets/natal/background1.svg";
-import background2 from "../assets/natal/background2.svg";
+import dataImportantes from "../assets/natal/dataImportantes.svg";
 import pagina1 from "../assets/natal/pagina1.svg";
 import pagina2 from "../assets/natal/pagina2.svg";
 import pagina4 from "../assets/natal/pagina4.svg";
@@ -44,7 +44,11 @@ export default function Page() {
               <Heart size={15} />
             </Button>
           </Link>
-          <Image src={pagina2} alt="pagine1" className="h-[440px]" />
+          <Image
+            src={dataImportantes}
+            alt="pagine1"
+            className="h-[420px] scale-125 my-16 "
+          />
         </div>
         <div className=" pt-10 flex flex-col items-center justify-center bg-[#8A5B39]">
           <h5 className="font-theseasonsit text-slate-200 text-3xl">
