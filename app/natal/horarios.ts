@@ -1,6 +1,6 @@
 export type HorariosType = {
   horario: string[];
-  situacao: "Disponível" | "Não disponível";
+  situacao: "Disponível" | "Pré reservado" | "Não disponível";
 };
 
 export const HorariosSabado: HorariosType[] = [
@@ -37,11 +37,11 @@ export const HorariosSabado: HorariosType[] = [
     situacao: "Disponível",
   },
   {
-    horario: ["16:20", "16:50"],
-    situacao: "Disponível",
+    horario: ["16:20", "17:20"],
+    situacao: "Pré reservado",
   },
   {
-    horario: ["17:00", "17:30"],
+    horario: ["17:30", "18:00"],
     situacao: "Disponível",
   },
 ];

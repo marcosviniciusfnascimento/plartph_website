@@ -72,6 +72,22 @@ export const getHorarioItem = (horario: HorariosType, delay: number) => {
           <span className="h-[1px] w-full border-b-1 border-dashed border-zinc-700" />
         </div>
       )}
+      {horario.situacao === "Pré reservado" && (
+        <div className="flex flex-col space-y-3">
+          <span className="flex space-x-10 items-center justify-between w-[370px]">
+            <span className="flex py-2 px-4  bg-[#BB987D] w-[165px] items-center justify-between text-sm text-white rounded-xl">
+              <Clock1 size={16} className="mr-3" />
+              {`${horario.horario[0]}h - ${horario.horario[1]}h`}
+            </span>
+            <span
+              className={`rounded-xl text-sm py-2 px-4 bg-yellow-300 text-white`}
+            >
+              {horario.situacao}
+            </span>
+          </span>
+          <span className="h-[1px] w-full border-b-1 border-dashed border-zinc-700" />
+        </div>
+      )}
     </Reveal>
   );
 };
