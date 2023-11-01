@@ -30,7 +30,7 @@ import vagaslimitadas from "../assets/natal/vagaslimitadas.svg";
 export const getHorarioItem = (horario: HorariosType, delay: number) => {
   const horarioreserva = `${horario.horario[0]}+%C3%A1s+${horario.horario[1]}`;
   return (
-    <Reveal width="100%" delay={delay}>
+    <Reveal width="100%" delay={delay} key={horarioreserva}>
       {horario.situacao === "Disponível" && (
         <Link
           target="_blank"
