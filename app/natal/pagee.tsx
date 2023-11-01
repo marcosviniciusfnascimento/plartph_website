@@ -56,7 +56,7 @@ export const getHorarioItem = (horario: HorariosType, delay: number) => {
           </div>
         </Link>
       )}
-      {horario.situacao === "Não disponível" && (
+      {horario.situacao === "Reservado" && (
         <div className="flex flex-col space-y-3">
           <span className="flex space-x-10 items-center justify-between w-[370px]">
             <span className="flex py-2 px-4  bg-[#BB987D] w-[165px] items-center justify-between text-sm text-white rounded-xl">
