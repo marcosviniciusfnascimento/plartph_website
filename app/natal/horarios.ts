@@ -34,7 +34,7 @@ export const HorariosSabado: HorariosType[] = [
   },
   {
     horario: ["15:40", "16:10"],
-    situacao: "Pré reservado",
+    situacao: "Reservado",
   },
   {
     horario: ["16:20", "17:20"],
