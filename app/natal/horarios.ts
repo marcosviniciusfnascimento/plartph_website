@@ -6,7 +6,7 @@ export type HorariosType = {
 export const HorariosSabado: HorariosType[] = [
   {
     horario: ["9:30", "10:00"],
-    situacao: "Disponível",
+    situacao: "Pré reservado",
   },
   {
     horario: ["10:10", "10:40"],
