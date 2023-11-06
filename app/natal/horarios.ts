@@ -22,7 +22,7 @@ export const HorariosSabado: HorariosType[] = [
   },
   {
     horario: ["13:40", "14:10"],
-    situacao: "Disponível",
+    situacao: "Reservado",
   },
   {
     horario: ["14:20", "14:50"],
