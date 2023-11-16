@@ -4,4 +4,4 @@ Aplicação web para apresentar o trabalho de uma fotógrafa profissional. Site 
 
 Contruído com Typescript, Next 13, TailwindCSS, shadcn, NextUI;
 
-Deploy em: hhtp://plartph.com
+Deploy em: https://plartph.com
