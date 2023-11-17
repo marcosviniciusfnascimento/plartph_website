@@ -1,9 +1,9 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
-import pagina1mobile from "../assets/natal/background1.svg";
+import pagina1mobile from "../assets/natal/Lançamento - Natal 2023.svg";
 import dataImportantes from "../assets/natal/dataImportantes.svg";
-import pagina1 from "../assets/natal/pagina1.svg";
+import pagina1 from "../assets/natal/Lançamento - Natal 2023.svg";
 import pagina2 from "../assets/natal/pagina2.svg";
 import pagina4 from "../assets/natal/pagina4.svg";
 import pacote1 from "../assets/natal/pacote1.svg";
@@ -13,12 +13,10 @@ import backgroundPacotes from "../assets/natal/backgroundPacotes.png";
 import backgroundPacotesMobile from "../assets/natal/bgPacotesMobile.png";
 import { natalGalleryImages } from "../assets/natal/mansory";
 import Reveal from "../components/Reveal/Reveal";
-import janela_mobile from "../assets/natal/janela (2).svg";
 import vagasLimitadas from "../assets/natal/VagasLimitadasEnd.svg";
-import arvore from "../assets/natal/arvore (2).svg";
 import AnimateH5 from "../components/Animate/h5";
-import { HorariosSabado, HorariosType } from "./horarios";
-import { Clock1, Heart, Timer } from "lucide-react";
+import { HorariosSabado } from "./horarios";
+import { Heart, Timer } from "lucide-react";
 import AnimateSpan from "../components/Animate/span";
 import { getHorarioItem } from "./pagee";
 import { Button } from "@nextui-org/react";

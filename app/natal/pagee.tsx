@@ -91,6 +91,7 @@ export const getHorarioItem = (horario: HorariosType, delay: number) => {
     </Reveal>
   );
 };
+
 export default function NatalPage() {
   const sortedImageArray = Object.values(natalGalleryImages).sort(
     () => Math.random() - 0.5
