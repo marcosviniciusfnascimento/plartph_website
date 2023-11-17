@@ -8,6 +8,7 @@ import image7 from "./7.jpg";
 import image8 from "./8.jpg";
 import image9 from "./9.jpg";
 import image10 from "./10.jpg";
+import image11 from "./11.jpg";
 
 export const natalGalleryImages = {
   image1,
@@ -20,4 +21,5 @@ export const natalGalleryImages = {
   image8,
   image9,
   image10,
+  image11,
 };
