@@ -7,6 +7,7 @@ import Desktop3 from "../../assets/Home/carousel/3.jpg";
 import mobile1 from "../../assets/Home/carousel/mobile1.jpg";
 import mobile2 from "../../assets/Home/carousel/mobile2.jpg";
 import mobile3 from "../../assets/Home/carousel/mobile3.jpg";
+import Image from "next/image";
 
 export default function IntroCarousel() {
   return (
@@ -23,19 +24,22 @@ export default function IntroCarousel() {
           autoplaySpeed={3000}
         >
           <img
-            src={Desktop1.src}
-            alt="CarrouselImage"
-            className="w-full h-auto"
+            src={
+              "https://res.cloudinary.com/dkskhotc8/image/upload/v1700403161/1_r8czy6.jpg"
+            }
+            alt="image"
           />
           <img
-            src={Desktop2.src}
-            alt="CarrouselImage"
-            className="w-full h-auto"
+            src={
+              "https://res.cloudinary.com/dkskhotc8/image/upload/v1700403161/2_ilhnrl.jpg"
+            }
+            alt="image"
           />
           <img
-            src={Desktop3.src}
-            alt="CarrouselImage"
-            className="w-full h-auto"
+            src={
+              "https://res.cloudinary.com/dkskhotc8/image/upload/v1700403162/3_kxj3rr.jpg"
+            }
+            alt="image"
           />
         </Carousel>
       </div>
@@ -51,19 +55,24 @@ export default function IntroCarousel() {
           autoplaySpeed={3000}
         >
           <img
-            src={mobile1.src}
+            src={
+              "https://res.cloudinary.com/dkskhotc8/image/upload/v1700403161/mobile1_xv2ajr.jpg"
+            }
             alt="CarrouselImage"
-            className="w-full h-auto"
           />
+
           <img
-            src={mobile2.src}
+            src={
+              "https://res.cloudinary.com/dkskhotc8/image/upload/v1700403161/mobile2_xokplr.jpg"
+            }
             alt="CarrouselImage"
-            className="w-full h-auto"
           />
+
           <img
-            src={mobile3.src}
+            src={
+              "https://res.cloudinary.com/dkskhotc8/image/upload/v1700403161/mobile3_iefq2o.jpg"
+            }
             alt="CarrouselImage"
-            className="w-full h-auto"
           />
         </Carousel>
       </div>
