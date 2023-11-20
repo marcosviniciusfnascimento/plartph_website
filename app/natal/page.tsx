@@ -31,7 +31,13 @@ export default function Page() {
     <>
       <div className="w-full flex-col hidden max-sm:block">
         <div className="w-full h-full bg-[#D7D2CC]">
-          <Image src={pagina1mobile} alt="bg" className="h-full w-full" />
+          <img
+            src={
+              "https://res.cloudinary.com/dkskhotc8/image/upload/v1700505424/Lanc%CC%A7amento_-_Natal_2023_ynuyod.svg"
+            }
+            alt="bg"
+            className="h-full w-full"
+          />
         </div>
         <div className="w-full bg-[#D7D2CC] flex flex-col items-center justify-center">
           <span className="flex space-x-5 items-center justify-center">
@@ -60,7 +66,7 @@ export default function Page() {
         </div>
         <div className=" pt-10 flex flex-col items-center justify-center bg-[#8A5B39]">
           <h5 className="font-theseasonsit text-slate-200 text-3xl">
-            Conheça as inspirações
+            Sessões que já aconteceram!
           </h5>
           <div className="columns-2  md:columns-4 lg:columns-5 md:p-24 p-10 w-full">
             {sortedImageArray.map((image, index) => (
@@ -121,7 +127,13 @@ export default function Page() {
       </div>
 
       <div className="w-full flex flex-col max-sm:hidden">
-        <Image src={pagina1} alt="pagine1" className="w-full h-full" />
+        <img
+          src={
+            "https://res.cloudinary.com/dkskhotc8/image/upload/v1700505424/Lanc%CC%A7amento_-_Natal_2023_ynuyod.svg"
+          }
+          alt="pagine1"
+          className="w-full h-full"
+        />
         <div className="w-full bg-[#D7D2CC] flex flex-col items-center justify-center">
           <span className="flex space-x-5 items-center justify-center">
             <Link
@@ -145,7 +157,7 @@ export default function Page() {
         </div>
         <div className=" pt-10 flex flex-col items-center justify-center bg-[#8A5B39]">
           <h5 className="font-theseasonsit text-slate-200 text-5xl">
-            Conheça as inspirações
+            Sessões que já aconteceram!
           </h5>
           <div className="columns-2 md:columns-4 lg:columns-5 md:p-24 p-10 bg-[#8A5B39] w-full">
             {sortedImageArray.map((image, index) => (
