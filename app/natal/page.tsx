@@ -129,7 +129,7 @@ export default function Page() {
       <div className="w-full flex flex-col max-sm:hidden">
         <img
           src={
-            "https://res.cloudinary.com/dkskhotc8/image/upload/v1700505424/Lanc%CC%A7amento_-_Natal_2023_ynuyod.svg"
+            "https://res.cloudinary.com/dkskhotc8/image/upload/v1700505808/Home_qjjoie.svg"
           }
           alt="pagine1"
           className="w-full h-full"
