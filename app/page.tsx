@@ -2,15 +2,15 @@
 import IntroCarousel from "./components/Intro/IntroCarousel";
 import About from "./components/Intro/About";
 import MansoryGallery from "./components/MansoryGallery/MansoryGallery";
-import { useEffect } from "react";
-import useScreenSize from "./hooks/useScreenSize";
+import HeroSection from "./components/Intro/HeroSection";
 
 export default function Home() {
   return (
     <div className="bg-zinc-200">
-      <IntroCarousel />
+      <HeroSection />
+      {/* <IntroCarousel />
       <About />
-      <MansoryGallery />
+      <MansoryGallery /> */}
     </div>
   );
 }
